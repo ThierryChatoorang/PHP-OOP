@@ -7,7 +7,7 @@ class student extends Persona {
     private $pwd;
     
     //constructor
-    public function __construct($name , $dateOfBirth = null, $pwd = null) {
+    public function __construct($name = null, $dateOfBirth = null, $pwd = null) {
         echo "Nieuwe student aangemaakt<br>";
        $this->name = $name;
         $this->dateOfBirth = $dateOfBirth;

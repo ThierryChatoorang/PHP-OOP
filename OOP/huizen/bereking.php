@@ -1,5 +1,6 @@
 <?php
-// Room class - simpele versie
+//@Thierry Chatoorang
+//
 class Room {
     public $length;  
     public $width;   

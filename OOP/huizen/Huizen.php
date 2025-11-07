@@ -10,7 +10,7 @@ class Huis {
     public $diepte;
     private $prijsPerM3;
 
-    // constructor (wordt uitgevoerd bij het maken van een nieuw huis)
+    // constructor (wordt uitgevoerd bij het maken van een nieuw huis) wordt uitgevoerd bij het maken van een nieuw huis 
     public function __construct($naam = null, $aantalVerdiepingen = null, $aantalKamers = null, $breedte = null, $hoogte = null, $diepte = null) {
         echo "Nieuw huis aangemaakt<br>";
         $this->naam = $naam;
@@ -37,7 +37,7 @@ class Huis {
         echo "Aantal kamers: " . $this->aantalKamers . "<br>";
     }
 
-    // volume berekenen
+    // volume berekenen //dit valideert de construct functie met een return zorgt dat de waarden kloppen, al is het een comma getal dan krijg ik geen error    
     public function berekenVolume() {
         return $this->breedte * $this->hoogte * $this->diepte;
     }
@@ -88,4 +88,4 @@ $huis4->printNaam();
 $huis4->printVerdiepingen();
 $huis4->printKamers();
 $huis4->printAfmetingEnPrijs();
-?>
+

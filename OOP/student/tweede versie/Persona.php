@@ -1,11 +1,11 @@
 <?php
  class Persona {
      public int $bsnr;
-    public string $name;
+    public ?string $name;
 
-    public string $dateOfBirth;
+    public ?string $dateOfBirth;
 
-    public string $Address;
+    public ?string $Address;
 
     public function __construct(int $bsnr, string $Name, string $DateOfBirth, string $Address) {
      //   $this->bsnr = $bsnr;

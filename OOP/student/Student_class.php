@@ -35,4 +35,3 @@ public function calculateAge() {
     return date('Y') - substr($this->dateOfBirth, -4);
 }
 }
-?>
